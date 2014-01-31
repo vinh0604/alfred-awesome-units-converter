@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    alfred-workflow (1.8.0)
+      plist (>= 3.1.0)
+    currencies (0.4.2)
+    plist (3.1.0)
+    ruby-units (1.4.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  alfred-workflow
+  currencies
+  plist
+  ruby-units (= 1.4.4)

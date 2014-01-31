@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>vn.ducvinh.alfred-awesome-units</string>
+	<key>connections</key>
+	<dict>
+		<key>4EF792DA-655D-49A8-ADE8-13AB0A6273B4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>91392153-FB2F-4089-AB3A-190B2B1D85D3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>6C68D0BB-A89A-4FDD-BB99-B5A5B460646E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4EF792DA-655D-49A8-ADE8-13AB0A6273B4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Vinh Bachsy</string>
+	<key>description</key>
+	<string>A simple but powerful units / currencies converter</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Awesome Units Converter</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>keyword</key>
+				<string>convert</string>
+				<key>runningsubtext</key>
+				<string>Working ...</string>
+				<key>script</key>
+				<string>/usr/bin/ruby ./main.rb {query}</string>
+				<key>subtext</key>
+				<string>E.g. 10 cm in m</string>
+				<key>title</key>
+				<string>Convert units / currencies</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6C68D0BB-A89A-4FDD-BB99-B5A5B460646E</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Awesome Units Converter</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>91392153-FB2F-4089-AB3A-190B2B1D85D3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>script</key>
+				<string>/usr/bin/ruby ./run_command.rb {query}</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4EF792DA-655D-49A8-ADE8-13AB0A6273B4</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Note: This extension use a free API service for currency converter (http://rate-exchange.appspot.com/currency).
+
+If you like the extension and its currency converter, please consider to make a small donation for the API (http://ko-fi.com/?i=8d071856392d304) to keep its live :)</string>
+	<key>uidata</key>
+	<dict>
+		<key>4EF792DA-655D-49A8-ADE8-13AB0A6273B4</key>
+		<dict>
+			<key>ypos</key>
+			<real>170</real>
+		</dict>
+		<key>6C68D0BB-A89A-4FDD-BB99-B5A5B460646E</key>
+		<dict>
+			<key>ypos</key>
+			<real>30</real>
+		</dict>
+		<key>91392153-FB2F-4089-AB3A-190B2B1D85D3</key>
+		<dict>
+			<key>ypos</key>
+			<real>40</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>siliconstraits.vn</string>
+</dict>
+</plist>
